@@ -28,11 +28,11 @@ class _MyHomePageState extends State<MyHomePage> {
         child: SingleChildScrollView(
           child: Column(
             children: <Widget>[
-              ImageSlider(),
               Text(
                 'Everything in your door step',
                 style: h1,
               ),
+              ImageSlider(),
               ProductList(),
             ],
           ),

@@ -6,7 +6,8 @@ const lightRoseQuartz = const Color(0xffdec2cb);
 const lightPurpil = const Color(0xffc5b9cd);
 const lightSerenity = const Color(0xffabb1cf);
 const serenity = const Color(0xff92a8d1);
-
+const white= Colors.white;
+const black= Colors.black;
 ///////////////////////text styles////////////////////////////////
 
 const style = TextStyle(fontFamily: 'Roboto', fontSize: 20.0);

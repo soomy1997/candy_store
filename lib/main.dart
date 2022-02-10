@@ -1,13 +1,11 @@
 import 'package:candy_store/ui/home_page.dart';
+import 'package:candy_store/utils/constants.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
-// Import the generated file
-//import 'firebase_options.dart';
+
 Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();
-  await Firebase.initializeApp(
-   // options: DefaultFirebaseOptions.currentPlatform
-  );
+  await Firebase.initializeApp();
   runApp(MyApp());
 }
 
@@ -18,13 +16,10 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
+        scaffoldBackgroundColor: white,
         primarySwatch: Colors.blue,
       ),
       home: MyHomePage(),
     );
   }
 }
-
-
-
-
