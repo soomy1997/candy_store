@@ -32,7 +32,7 @@ class ImageSlider extends StatelessWidget {
 final List<Widget> imageSliders = imgList
     .map((item) => Container(
           child: Container(
-            margin: EdgeInsets.all(5.0),
+            margin: EdgeInsets.all(20.0),
             child: ClipRRect(
                 borderRadius: BorderRadius.all(Radius.circular(10.0)),
                 child: Stack(
@@ -60,14 +60,6 @@ final List<Widget> imageSliders = imgList
                         ),
                         padding: EdgeInsets.symmetric(
                             vertical: 10.0, horizontal: 20.0),
-                        // child: Text(
-                        //   'No. ${imgList.indexOf(item)} image',
-                        //   style: TextStyle(
-                        //     color: Colors.white,
-                        //     fontSize: 20.0,
-                        //     fontWeight: FontWeight.bold,
-                        //   ),
-                        // ),
                       ),
                     ),
                   ],
