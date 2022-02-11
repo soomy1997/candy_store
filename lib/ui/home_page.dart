@@ -28,6 +28,7 @@ class _MyHomePageState extends State<MyHomePage> {
         child: SingleChildScrollView(
           child: Column(
             children: <Widget>[
+              ImageSlider(),
               Padding(
                 padding: const EdgeInsets.all(10.0),
                 child: Text(
@@ -35,7 +36,6 @@ class _MyHomePageState extends State<MyHomePage> {
                   style: h1,
                 ),
               ),
-              ImageSlider(),
               ProductList(),
             ],
           ),
