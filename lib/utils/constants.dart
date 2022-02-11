@@ -1,4 +1,6 @@
+import 'package:candy_store/ui/cart.dart';
 import 'package:flutter/material.dart';
+import 'package:badges/badges.dart';
 
 ///////////////////////Colors////////////////////////////////const primaryBlack = const Color(0xff0B0B0B);
 const roseQuartz = const Color(0xfff7cac9);
@@ -41,13 +43,12 @@ const h5 = TextStyle(
   fontFamily: 'Roboto',
   color: Colors.grey,
   fontWeight: FontWeight.normal,
-  fontSize: 17,
+  fontSize: 12,
 );
 
 ///////////////////////AppBar styles////////////////////////////////
-AppBar myAppBar(
+AppBar customAppBar(
   context, {
-  // String title,
   IconButton iconButton,
 }) {
   return AppBar(
@@ -60,15 +61,70 @@ AppBar myAppBar(
     centerTitle: true,
     iconTheme: IconThemeData(color: Colors.white),
     actions: <Widget>[
-      IconButton(
-        icon: Icon(
-          Icons.shopping_cart_outlined,
-          color: Colors.white,
+      Container(
+        child: Badge(
+          badgeContent: Text('5'),
+          animationType: BadgeAnimationType.slide,
+          position: BadgePosition.topEnd(top: -0.2, end: -0.2),
+          padding: const EdgeInsets.all(6.0),
+          stackFit: StackFit.loose,
+          child: IconButton(
+            icon: Icon(
+              Icons.shopping_cart_outlined,
+              color: Colors.white,
+            ),
+            onPressed: () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(
+                  builder: (context) => CartPage(),
+                ),
+              );
+            },
+          ),
         ),
-        onPressed: () {
-          // TODO        do something
-        },
-      ),
+      )
+    ],
+  );
+}
+
+AppBar customAppBar2(
+  context, {
+  IconButton iconButton,
+  String title,
+}) {
+  return AppBar(
+    backgroundColor: lightRoseQuartz,
+    title: Text(title,
+        style: TextStyle(
+          color: Colors.white,
+        )),
+    centerTitle: true,
+    iconTheme: IconThemeData(color: Colors.white),
+    actions: <Widget>[
+      Container(
+        child: Badge(
+          badgeContent: Text('5'),
+          animationType: BadgeAnimationType.slide,
+          position: BadgePosition.topEnd(top: -0.2, end: -0.2),
+          padding: const EdgeInsets.all(6.0),
+          stackFit: StackFit.loose,
+          child: IconButton(
+            icon: Icon(
+              Icons.shopping_cart_outlined,
+              color: Colors.white,
+            ),
+            onPressed: () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(
+                  builder: (context) => CartPage(),
+                ),
+              );
+            },
+          ),
+        ),
+      )
     ],
   );
 }
