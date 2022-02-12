@@ -37,6 +37,12 @@ const h4 = TextStyle(
   fontWeight: FontWeight.bold,
   fontSize: 17,
 );
+const h2 = TextStyle(
+  fontFamily: 'Roboto',
+  color: Colors.white,
+  fontWeight: FontWeight.bold,
+  fontSize: 17,
+);
 
 //grey thin texts
 const h5 = TextStyle(

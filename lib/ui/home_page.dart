@@ -1,6 +1,5 @@
 import 'package:candy_store/home_page_widgets/product_list.dart';
 import 'package:candy_store/home_page_widgets/slide_show.dart';
-//import 'package:candy_store/home_page_components/main_drawer.dart';
 import 'package:candy_store/utils/constants.dart';
 import 'package:flutter/material.dart';
 
