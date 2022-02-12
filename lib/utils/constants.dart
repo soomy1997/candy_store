@@ -59,8 +59,8 @@ AppBar customAppBar(
 }) {
   return AppBar(
     backgroundColor: lightRoseQuartz,
-    title: Image.asset(
-      '/Users/asmaalkhaldi/flutter_projects/candy_store/images/logo.png',
+    title: Image.network(
+      'https://firebasestorage.googleapis.com/v0/b/candy-store-df71b.appspot.com/o/logo.png?alt=media&token=c7ccd36d-45c8-4fec-bba3-44299c429321',
       height: 150,
       width: 150,
     ),
